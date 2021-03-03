@@ -1,0 +1,377 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: gray;
+  font-size: 1rem;
+  background-color: #f4f9f9;
+  text-align: center;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.4rem;
+}
+
+.logo {
+  width: 2rem;
+  position: relative;
+  top: 0.5rem;
+}
+
+h1 {
+  display: inline;
+  font-size: 1.3rem;
+  font-family: "Kalam", cursive;
+  color: #4a47a3;
+}
+
+.nav-checkbox {
+  display: none;
+}
+
+.nav-toggle {
+  cursor: pointer;
+}
+.menu {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  visibility: hidden;
+}
+
+li {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+  color: #28527a;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem;
+}
+
+#nav-checkbox:checked ~ .nav-menu {
+  visibility: visible;
+}
+
+a:hover {
+  color: #fff;
+  background-color: #78c4d4;
+  border-radius: 28px;
+}
+
+a:active {
+  color: #fff;
+  background-color: #5995da;
+}
+
+.welcome {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bg {
+  width: 100%;
+  position: relative;
+}
+
+.welcome-description {
+  position: absolute;
+  text-align: center;
+}
+
+.name-paragraph {
+  color: #0a043c;
+  font-size: 2.2rem;
+  font-family: "Merriweather", serif;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.traveller-paragraph {
+  color: #28527a;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.profile-img {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  margin-bottom: 1rem;
+  color: #0a043c;
+}
+
+.my-story {
+  color: #28527a;
+}
+
+.skills-title {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+.skills-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+
+.section {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+
+.skilltitle-inside-list {
+  color: #0a043c;
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+}
+
+.my-skills {
+  height: 170px;
+  gap: 1.4rem;
+  color: #28527a;
+  font-weight: 600;
+}
+.contacts {
+  margin-bottom: 2rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.info {
+  font-size: 1.1rem;
+  color: #28527a;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.contact-btn {
+  background: #5eaaa8;
+  border-radius: 28px;
+  font-family: "Merriweather", serif;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+.contact-btn:hover {
+  background-color: #78c4d4;
+}
+
+.contact-btn:active {
+  background-color: #5995da;
+}
+
+.bottom-icons {
+  background-color: #5eaaa8;
+  text-align: center;
+  height: 140px;
+  padding-top: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #0a043c;
+  font-size: 1.1rem;
+  padding: 0.5rem 0.5rem;
+}
+
+.link:hover {
+  background-color: #78c4d4;
+}
+
+.link:active {
+  background-color: #5995da;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+}
+
+@media only screen and (min-width: 480px) and (max-width: 1010px) {
+  .logo {
+    width: 30%;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .nav-toggle {
+    visibility: hidden;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+  }
+
+  .nav-menu li {
+    visibility: visible;
+    margin-right: 3rem;
+  }
+  .welcome {
+    display: flex;
+    height: 100%;
+  }
+
+  .bg {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+  }
+
+  .profile-img {
+    margin-top: 1rem;
+    width: 15%;
+  }
+
+  .name-paragraph {
+    padding-top: 2rem;
+  }
+
+  .about-me-title {
+    margin-top: 1rem;
+  }
+  ul li {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+}
+
+@media only screen and (min-width: 1010px) {
+  .logo {
+    width: 3rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .nav-toggle {
+    visibility: hidden;
+  }
+
+  .nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-menu {
+    flex-direction: row;
+  }
+
+  .nav-menu li {
+    visibility: visible;
+    margin-right: 3rem;
+  }
+  .welcome {
+    display: flex;
+    height: 100%;
+  }
+
+  .bg {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+  }
+
+  .name-paragraph {
+    font-size: 4rem;
+    margin-bottom: 2.3rem;
+  }
+
+  .traveller-paragraph {
+    color: #28527a;
+    font-size: 1.5rem;
+  }
+
+  .profile-img {
+    margin-top: 1.5rem;
+    width: 15%;
+  }
+  h2 {
+    margin-top: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 1.8rem;
+  }
+  .my-story {
+    font-size: 1.1rem;
+    width: 50%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 1rem;
+    line-height: 2;
+    position: relative;
+    right: 3%;
+  }
+  .skilltitle-inside-list {
+    font-size: 1.3rem;
+    margin-bottom: 0.9rem;
+  }
+  .contacts {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .contacts h2 {
+    margin-bottom: 0.2rem;
+  }
+
+  .info {
+    font-size: 1.2rem;
+  }
+
+  .contact-btn {
+    width: 30%;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
