@@ -224,7 +224,7 @@ h2 {
 
 @media only screen and (max-width: 480px) {
   .welcome {
-    max-height: 60vh;
+    max-height: 50vh;
   }
 }
 
